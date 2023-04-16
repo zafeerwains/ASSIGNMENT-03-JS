@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+main {
+    min-height: 86.5vh;
+    flex: 0 auto;
+}
+
+.card-body {
+    max-height: 300px;
+    white-space: pre-wrap;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+// img{
+//     height: 50%;
+//     width: 100%;
+// }
+select{
+    width: 100%;
+};
