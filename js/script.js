@@ -4,13 +4,13 @@
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
+    amPm = "AM"
     if (hours > 11) {
       amPm = "PM";
       if (hours > 12) {
         hours -= 12;
       }
     }
-    amPm = "AM"
     document.getElementById("currentTime").innerHTML = `${hours}:${minutes}:${seconds}${amPm}`
   }, 1000)
   const input = (output) => document.getElementById("output").innerHTML += output;
@@ -28,7 +28,7 @@
   for (let i = 0; i < languages.length; i++) {
     document.getElementById("languageSelect").innerHTML += `<option value="${languages[i].name}">${languages[i].name}</option>`
   }
-  let genres = ["Action", "Comedy", "Fantasy", "Crime", "Drama", "Music", "Adventure", "History", "Thriller", "Animation"]
+  let genres = ["Action", "Comedy", "Fantasy", "Crime", "Drama", "Music", "Adventure", "History", "Romance","Thriller", "Animation"]
   for (gene of genres) {
     document.getElementById("genereSelect").innerHTML += `<option value="${gene}">${gene}</option>`
   }
